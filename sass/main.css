@@ -19,7 +19,8 @@ body {
   width: 570px;
   height: auto;
   padding: 30px;
-  border-radius: 18px 18px 130px 30px;
+  border-radius: 18px 18px 130px 18px;
+  margin: 20px;
 }
 
 .input-container {
@@ -84,4 +85,51 @@ img {
 #monthsOutput,
 #daysOutput {
   color: #864cff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 470px;
+    border-radius: 20px 20px 100px 20px;
+  }
+  #inputField {
+    width: 90%;
+    font-size: 20px;
+  }
+  .button {
+    width: 55px;
+    height: 55px;
+  }
+  .output-container {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 495px) {
+  .container {
+    width: 90%;
+    border-radius: 20px 20px 100px 20px;
+    margin: 0;
+  }
+  .input-container {
+    width: 100%;
+  }
+  #inputField {
+    width: 90%;
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .button {
+    width: 50px;
+    height: 50px;
+    margin-bottom: -25px;
+  }
+  .output-container {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
