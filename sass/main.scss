@@ -1,3 +1,96 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$First_color :#f0f0f0;
+$Second_color :#fff;
+$Third_color :#864cff;
+$Fourth_color: #888;
+$Fifth_color: #191919;
+$Border_color :#8888884d;
+$First-font: "Poppins", sans-serif;
+
 body {
-    background: #fff;
+    background: $First_color;
+    font-family: $First_font;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: $Second_color;
+    width: 570px;
+    height: auto;
+    padding: 30px;
+    border-radius: 18px 18px 130px 30px;
+}
+
+.input-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+h2 {
+ color: $Fourth_color;
+ font-size: 11px;
+ text-transform: uppercase;
+ margin-bottom: 5px;
+}
+
+#inputField {
+    width: 110px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    outline: none;
+    border: 0.90px solid $Border_color;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.button-container {
+ width: 95%;
+ border-bottom: 0.90px solid $Border_color;
+}
+
+.button {
+    background: $Third_color;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    float: right;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+img {
+    width: 30px;
+}
+
+.output-container {
+    margin-top: 30px;
+    font-size: 60px;
+    font-weight: 800;
+    color: $Fifth_color;
+    font-style: italic;
+}
+
+.output-line {
+    display: flex;
+}
+
+#yearsOutput,
+#monthsOutput,
+#daysOutput {
+    color: $Third_color;
 }
