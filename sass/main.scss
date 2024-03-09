@@ -57,7 +57,7 @@ h2 {
 }
 
 .button-container {
- width: 95%;
+ width: 100%;
  border-bottom: 0.90px solid $Border_color;
 }
 
@@ -94,6 +94,7 @@ img {
 #monthsOutput,
 #daysOutput {
     color: $Third_color;
+    letter-spacing: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -132,7 +133,7 @@ img {
     #inputField {
      width: 90%;
      font-size: 15px;
-     padding: 12px 14px;
+     padding: 14px 14px;
     }
 
     .button-container {
@@ -143,9 +144,13 @@ img {
     }
 
     .button {
-        width: 50px;
-        height: 50px;
-        margin-bottom:-25px;
+        width: 55px;
+        height: 55px;
+        margin-bottom:-30px;
+    }
+
+    img {
+        width: 20px;
     }
 
     .output-container  {

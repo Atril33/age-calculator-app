@@ -48,7 +48,7 @@ h2 {
 }
 
 .button-container {
-  width: 95%;
+  width: 100%;
   border-bottom: 0.9px solid rgba(136, 136, 136, 0.3019607843);
 }
 
@@ -85,6 +85,7 @@ img {
 #monthsOutput,
 #daysOutput {
   color: #864cff;
+  letter-spacing: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -116,7 +117,7 @@ img {
   #inputField {
     width: 90%;
     font-size: 15px;
-    padding: 12px 14px;
+    padding: 14px 14px;
   }
   .button-container {
     width: 100%;
@@ -125,9 +126,12 @@ img {
     margin-top: 25px;
   }
   .button {
-    width: 50px;
-    height: 50px;
-    margin-bottom: -25px;
+    width: 55px;
+    height: 55px;
+    margin-bottom: -30px;
+  }
+  img {
+    width: 20px;
   }
   .output-container {
     font-size: 40px;
