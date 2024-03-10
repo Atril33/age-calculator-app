@@ -1,2 +1,3 @@
-var userName = 'syed';
-console.log(userName);
+var inputFields = document.getElementsByClassName('inputField');
+var dataOutput = document.getElementsByClassName('dataOutput');
+var resultButton = document.getElementsByClassName('button');
