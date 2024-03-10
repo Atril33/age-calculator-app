@@ -3,7 +3,7 @@ var dataOutput = document.getElementsByClassName('dataOutput');
 var resultButton = document.getElementsByClassName('button');
 var currentDate = Date();
 var dateToArray = currentDate.split(' ');
-console.log(dateToArray.splice(1, 3));
+var finalDate = dateToArray.splice(1, 3);
 var ClickButton = function () {
     console.log(resultButton);
 };
