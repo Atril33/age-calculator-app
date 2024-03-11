@@ -33,34 +33,27 @@ const ageCalculation = () => {
   months = inputFields[1].value
   years = inputFields[2].value
 
+  days = Number(days)
+  months = Number(months)
+  years = Number(years)
 
-  if(finalDate[0] < months) {
-   
-    yearsDisplay = (finalDate[2] - years) - 1
-    console.log(yearsDisplay)
-
-  } 
-
-   if(finalDate[0] > months) {
-    yearsDisplay = finalDate[2] - years
-  } 
-  
-   if (finalDate[0] == months && finalDate[1] >= days) {
-    yearsDisplay = finalDate[2] - years
-  }
-
-  if (finalDate[1] <= days) {
-    yearsDisplay = (finalDate[2] - years) - 1
-    console.log(yearsDisplay)
-  }
- 
-
+if(finalDate[0] < months && finalDate[1] > days) yearsDisplay = (finalDate[2] - years) - 1
+if(finalDate[0] > months)  yearsDisplay = finalDate[2] - years 
+if (finalDate[0] == months && finalDate[1] >= days) yearsDisplay = finalDate[2] - years
+if(finalDate[1] < days || finalDate[0] < months) yearsDisplay = (finalDate[2] - years) - 1
+if(finalDate[0] == months && finalDate[1] < days) monthsDisplay = (12 + finalDate[0]) - months - 1
+if(finalDate[0] == months && finalDate[1] >= days) monthsDisplay = 0 
+if(finalDate[0] < months) monthsDisplay = (12 + finalDate[0]) - months - 1
 
 
  }
+
 
 const clickButton = (): void => {
   ageCalculation()
 }
 
  resultButton[0].addEventListener('click', clickButton) 
+ 
+
+

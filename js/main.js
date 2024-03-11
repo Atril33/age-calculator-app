@@ -40,20 +40,23 @@ var ageCalculation = function () {
     days = inputFields[0].value;
     months = inputFields[1].value;
     years = inputFields[2].value;
-    if (finalDate[0] < months) {
+    days = Number(days);
+    months = Number(months);
+    years = Number(years);
+    if (finalDate[0] < months && finalDate[1] > days)
         yearsDisplay = (finalDate[2] - years) - 1;
-        console.log(yearsDisplay);
-    }
-    if (finalDate[0] > months) {
+    if (finalDate[0] > months)
         yearsDisplay = finalDate[2] - years;
-    }
-    if (finalDate[0] == months && finalDate[1] >= days) {
+    if (finalDate[0] == months && finalDate[1] >= days)
         yearsDisplay = finalDate[2] - years;
-    }
-    if (finalDate[1] <= days) {
+    if (finalDate[1] < days || finalDate[0] < months)
         yearsDisplay = (finalDate[2] - years) - 1;
-        console.log(yearsDisplay);
-    }
+    if (finalDate[0] == months && finalDate[1] < days)
+        monthsDisplay = (12 + finalDate[0]) - months - 1;
+    if (finalDate[0] == months && finalDate[1] >= days)
+        monthsDisplay = 0;
+    if (finalDate[0] < months)
+        monthsDisplay = (12 + finalDate[0]) - months - 1;
 };
 var clickButton = function () {
     ageCalculation();
