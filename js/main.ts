@@ -37,16 +37,48 @@ const ageCalculation = () => {
   months = Number(months)
   years = Number(years)
 
-if(finalDate[0] < months && finalDate[1] > days) yearsDisplay = (finalDate[2] - years) - 1
-if(finalDate[0] > months)  yearsDisplay = finalDate[2] - years 
-if (finalDate[0] == months && finalDate[1] >= days) yearsDisplay = finalDate[2] - years
-if(finalDate[1] < days || finalDate[0] < months) yearsDisplay = (finalDate[2] - years) - 1
-if(finalDate[0] == months && finalDate[1] < days) monthsDisplay = (12 + finalDate[0]) - months - 1
-if(finalDate[0] == months && finalDate[1] >= days) monthsDisplay = 0 
-if(finalDate[0] < months) monthsDisplay = (12 + finalDate[0]) - months - 1
 
 
- }
+ if(finalDate[0] > months && finalDate[1] > days) {
+  yearsDisplay = (finalDate[2] - years) - 1
+  console.log(yearsDisplay)
+} else if(finalDate[0] == months && finalDate[1] < days) {
+  yearsDisplay = (finalDate[2] - years) - 1
+  console.log(yearsDisplay)
+} else if(finalDate[0] == months && finalDate[1] >= days) {
+  yearsDisplay = finalDate[2] - years
+  console.log(yearsDisplay)
+} else {
+  yearsDisplay = finalDate[2] - years
+  console.log(yearsDisplay)
+}
+
+
+// if(finalDate[0] > months)  yearsDisplay = finalDate[2] - years 
+// if(finalDate[0] == months && finalDate[1] >= days) yearsDisplay = finalDate[2] - years
+// if(finalDate[0] < months) yearsDisplay = (finalDate[2] - years) - 1
+
+
+// if(finalDate[0] == months && finalDate[1] < days) monthsDisplay = (12 - finalDate[0]) + months - 12
+// if(finalDate[0] == months && finalDate[1] >= days) monthsDisplay = 0 
+// if(finalDate[0] < months) monthsDisplay = (12 - finalDate[0]) + months - 12
+// if(finalDate[0] > months) monthsDisplay = (12 - finalDate[0]) + months - 12 + 2
+// 
+// if(finalDate[0] == 1) daysDisplay = (days - finalDate[1] - 31) *-1
+// if(finalDate[0] == 2) daysDisplay = (days - finalDate[1] - 28) *-1
+// if(finalDate[0] == 3) daysDisplay = (days - finalDate[1] - 31) *-1
+// if(finalDate[0] == 4) daysDisplay = (days - finalDate[1] - 30) *-1
+// if(finalDate[0] == 5) daysDisplay = (days - finalDate[1] - 31) *-1
+// if(finalDate[0] == 6) daysDisplay = (days - finalDate[1] - 30) *-1
+// if(finalDate[0] == 7) daysDisplay = (days - finalDate[1] - 31) *-1
+// if(finalDate[0] == 8) daysDisplay = (days - finalDate[1] - 31) *-1
+// if(finalDate[0] == 9) daysDisplay = (days - finalDate[1] - 30) *-1
+// if(finalDate[0] == 10) daysDisplay = (days - finalDate[1] - 31) *-1
+// if(finalDate[0] == 11) daysDisplay = (days - finalDate[1] - 30) *-1
+// if(finalDate[0] == 12) daysDisplay = (days - finalDate[1] - 31) *-1
+ 
+
+}
 
 
 const clickButton = (): void => {
