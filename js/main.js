@@ -45,24 +45,27 @@ var ageCalculation = function () {
     years = Number(years);
     if (finalDate[0] > months && finalDate[1] > days) {
         yearsDisplay = (finalDate[2] - years) - 1;
-        console.log(yearsDisplay);
     }
     else if (finalDate[0] == months && finalDate[1] < days) {
         yearsDisplay = (finalDate[2] - years) - 1;
-        console.log(yearsDisplay);
     }
     else if (finalDate[0] == months && finalDate[1] >= days) {
         yearsDisplay = finalDate[2] - years;
-        console.log(yearsDisplay);
+    }
+    else if (finalDate[0] >= months && finalDate[1] > days || finalDate[0] < months) {
+        yearsDisplay = (finalDate[2] - years) - 1;
     }
     else {
         yearsDisplay = finalDate[2] - years;
-        console.log(yearsDisplay);
     }
-    // if(finalDate[0] > months)  yearsDisplay = finalDate[2] - years 
-    // if(finalDate[0] == months && finalDate[1] >= days) yearsDisplay = finalDate[2] - years
-    // if(finalDate[0] < months) yearsDisplay = (finalDate[2] - years) - 1
-    // if(finalDate[0] == months && finalDate[1] < days) monthsDisplay = (12 - finalDate[0]) + months - 12
+    if (finalDate[0] <= months) {
+        monthsDisplay = yearsDisplay * 12 - (months - finalDate[0]);
+        console.log(monthsDisplay);
+    }
+    else {
+        monthsDisplay = (yearsDisplay - 1) * 12 + (12 - finalDate[0]) + months;
+        console.log(monthsDisplay);
+    }
     // if(finalDate[0] == months && finalDate[1] >= days) monthsDisplay = 0 
     // if(finalDate[0] < months) monthsDisplay = (12 - finalDate[0]) + months - 12
     // if(finalDate[0] > months) monthsDisplay = (12 - finalDate[0]) + months - 12 + 2
