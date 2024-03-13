@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="assets/favicon-32x32.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -15,15 +15,15 @@
         <div class="input-container">
             <div>
          <h2>Day</h2>
-         <input type="text" id="inputField" placeholder="DD" required>
+         <input type="text" class="inputField" placeholder="DD">
         </div>
         <div>
          <h2>Month</h2>
-         <input type="text" id="inputField"  placeholder="MM" required>
+         <input type="text" class="inputField"  placeholder="MM">
          </div>
          <div>
          <h2>Year</h2>
-         <input type="text" id="inputField" placeholder="YYYY" required>
+         <input type="text" class="inputField" placeholder="YYYY">
         </div>
 
  
@@ -32,9 +32,9 @@
         <div class="button"><img src="assets/icon-arrow.svg"></div>
     </div>
         <div class="output-container">
-            <div class="output-line"><div id="yearsOutput">--</div> years</div>
-            <div class="output-line"><div id="monthsOutput">--</div> months</div>
-            <div class="output-line"><div id="daysOutput">--</div> days</div>
+            <div class="output-line"><div class="dataOutput">--</div> years</div>
+            <div class="output-line"><div class="dataOutput">--</div> months</div>
+            <div class="output-line"><div class="dataOutput">--</div> days</div>
         </div>
     </div>
     <script src="js/main.js"></script>

@@ -46,7 +46,7 @@ h2 {
  margin-bottom: 5px;
 }
 
-#inputField {
+.inputField {
     width: 110px;
     padding: 10px 14px;
     border-radius: 5px;
@@ -90,9 +90,7 @@ img {
     display: flex;
 }
 
-#yearsOutput,
-#monthsOutput,
-#daysOutput {
+.dataOutput {
     color: $Third_color;
     letter-spacing: 5px;
 }
@@ -103,7 +101,7 @@ img {
         border-radius: 20px 20px 100px 20px;
     }
 
-    #inputField {
+    .inputField {
         width: 90%;
      font-size: 20px;
     }
@@ -130,7 +128,7 @@ img {
         width: 100%;
     }
 
-    #inputField {
+    .inputField {
      width: 90%;
      font-size: 15px;
      padding: 14px 14px;
